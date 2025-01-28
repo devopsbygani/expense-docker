@@ -3,8 +3,9 @@ FROM node:20.18-alpine
 EXPOSE 8080
 ENV DB_HOST="mysql"
 RUN USERADD expense
-RUN mkdir /opt/server
-COPY *.js /opt/server
-COPY *.json /opt/server
+RUN mkdir /opt/app
+COPY *.js /opt/app
+COPY *.json /opt/app
+WORKDIR /opt/app
 RUN npm install
 CMD ["node", "index.js"]
