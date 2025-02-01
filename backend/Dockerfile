@@ -1,5 +1,6 @@
 #node js version 20
-FROM node:20.18-alpine
+#FROM node:20.18-alpine
+FROM node:20
 EXPOSE 8080
 ENV DB_HOST="mysql"
 RUN adduser -S expense
