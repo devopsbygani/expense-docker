@@ -9,3 +9,4 @@ COPY *.json /opt/app
 WORKDIR /opt/app
 RUN npm install
 CMD ["node", "index.js"]
+USER expense
