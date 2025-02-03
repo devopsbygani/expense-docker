@@ -2,7 +2,7 @@
 #FROM node:20.18-alpine
 FROM node:20
 EXPOSE 8080
-ENV DB_HOST="mysql"
+ENV DB_HOST="localhost"
 #RUN adduser -S expense
 RUN mkdir /opt/app
 COPY *.js /opt/app
