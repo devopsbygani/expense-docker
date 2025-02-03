@@ -23,7 +23,7 @@ services:
       - mysql
 
   frontend:
-    image: promptforai/backend:v1
+    image: promptforai/frontend:v1
     networks:
       - expense
     container_name: frontend
