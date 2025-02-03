@@ -26,6 +26,8 @@ services:
     image: promptforai/frontend:v1
     networks:
       - expense
+    ports:
+      - 80:80
     container_name: frontend
     depends_on:
       - backend
