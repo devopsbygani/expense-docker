@@ -7,7 +7,7 @@ COPY *.js /opt/app
 COPY *.json /opt/app
 WORKDIR /opt/app
 RUN npm install
-USER expense
+#USER expense
 CMD ["node", "index.js"]
 
 
