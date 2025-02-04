@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 COPY code /usr/share/nginx/html/
 RUN rm -rf /etc/nginx/nginx.conf
